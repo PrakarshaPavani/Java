@@ -1,8 +1,6 @@
 public class Palindrome {
 
-    public static void main(String[] args) {
-       String s="aha";
-       String s1="hello";
+    public static boolean palindrome(String s) {
        char[] ch=s.toCharArray();
        int left=0,right=ch.length-1;
        char temp; 
@@ -16,6 +14,11 @@ public class Palindrome {
         right--;
        }
        System.out.println("Is \""+s+"\" palindrome : "+s.equals(new String(ch)));
-       System.out.println("Is \""+s1+"\" palindrome : "+s1.equals(new String(ch)));
+       return s.equals(new String(ch));
+    }
+
+    public static void main(String[] args)
+    {
+        palindrome("aha);
     }
 }
