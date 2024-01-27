@@ -9,7 +9,6 @@ public class Palindrome {
         temp=ch[left];
         ch[left]=ch[right];
         ch[right]=temp;
-
         left++;
         right--;
        }
