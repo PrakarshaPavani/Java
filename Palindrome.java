@@ -18,6 +18,6 @@ public class Palindrome {
 
     public static void main(String[] args)
     {
-        palindrome("aha);
+        palindrome("aha");
     }
 }
